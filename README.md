@@ -18,3 +18,9 @@ Few-Shot Adversarial Learning of Realistic Neural Talking Head Models TensorFlow
 1. download the dataset Voxceleba2
 2. execute preprocess.py
 3. execute train.py
+
+# Results
+Is under training.
+
+# Acknowledgements
+The preprocess.py is from [Vincent Thévenin](https://github.com/vincent-thevenin/Realistic-Neural-Talking-Head-Models)
