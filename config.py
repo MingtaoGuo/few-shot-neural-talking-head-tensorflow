@@ -12,4 +12,4 @@ WEIGHT_VGG = 1.5e-1
 WEIGHT_MCH = 10
 WEIGHT_FM = 10
 
-IMG_PATH = "G:/vox2_mp4/vox2_mp4_preprocess/"
+IMG_PATH = "./vox2_mp4_preprocess/"
