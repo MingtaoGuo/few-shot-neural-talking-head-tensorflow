@@ -8,11 +8,11 @@ from tqdm import tqdm
 import face_alignment
 from matplotlib import pyplot as plt
 
-path_to_mp4 = 'G:/vox2_mp4/vox2_mp4_parts'
+path_to_mp4 = './voxceleb/dev/mp4'
 K = 8
-num_vid = 18432
+num_vid = 0
 device = torch.device('cuda:0')
-saves_dir = 'G:/vox2_mp4/vox2_mp4_preprocess'
+saves_dir = './vox2_mp4_preprocess'
 face_aligner = face_alignment.FaceAlignment(face_alignment.LandmarksType._2D, flip_input=False, device='cuda:0')
 
 if not os.path.isdir(saves_dir):
@@ -97,11 +97,7 @@ def pick_images(video_path, pic_folder, num_images):
 
     return frames_list
 
-count = 0
 for person_id in tqdm(os.listdir(path_to_mp4)):
-    count += 1
-    if count < 700:
-        continue
     for video_id in tqdm(os.listdir(os.path.join(path_to_mp4, person_id))):
         for video in os.listdir(os.path.join(path_to_mp4, person_id, video_id)):
 
