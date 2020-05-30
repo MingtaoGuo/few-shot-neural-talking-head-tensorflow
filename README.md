@@ -2,7 +2,7 @@
 Few-Shot Adversarial Learning of Realistic Neural Talking Head Models TensorFlow
 
 # Introduction
-![]()
+![](https://github.com/MingtaoGuo/few-shot-neural-talking-head-tensorflow/blob/master/IMGS/intro.jpg)
 
 # Requirements
 1. python 3.6
