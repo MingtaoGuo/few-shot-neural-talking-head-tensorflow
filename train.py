@@ -57,7 +57,7 @@ def train():
     saver.restore(sess, "./pretrained/vgg.ckpt")
     saver = tf.train.Saver()
     saver.restore(sess, "./models/model.ckpt")
-    for i in range(200000):
+    for i in range(300000):
         FRAMES, LANDMARKS, LABELS = read_video_landmark()
         for j in range(2):
             sess.run(Opt_D, feed_dict={frames: FRAMES, landmarks: LANDMARKS, y: LABELS})
